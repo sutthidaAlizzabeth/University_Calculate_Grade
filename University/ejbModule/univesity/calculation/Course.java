@@ -10,41 +10,39 @@ import university.course.Subject;
  *
  */
 public class Course implements Subject{
+	
+	private String subjectId;
+	private String subjectName;
+	private int credit;
 
 	@Override
 	public void setSubjectId(String id) {
-		// TODO Auto-generated method stub
-		
+		this.subjectId = id;
 	}
 
 	@Override
 	public String getSubjectId() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.subjectId;
 	}
 
 	@Override
 	public void setSubjectName(String name) {
-		// TODO Auto-generated method stub
-		
+		this.subjectName = name;
 	}
 
 	@Override
 	public String getSubjectName() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.subjectName;
 	}
 
 	@Override
 	public void setCredit(int credit) {
-		// TODO Auto-generated method stub
-		
+		this.credit = credit;
 	}
 
 	@Override
 	public int getCredit() {
-		// TODO Auto-generated method stub
-		return 0;
+		return this.credit;
 	}
 
 }
