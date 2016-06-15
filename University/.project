@@ -3,6 +3,7 @@
 	<name>CalculateGrade</name>
 	<comment></comment>
 	<projects>
+		<project>CalculateGradeClient</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

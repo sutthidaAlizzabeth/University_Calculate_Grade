@@ -16,7 +16,7 @@ public interface Person {
 	public String getFname();
 	public void setLname(String lname);
 	public String getLname();
-	public void setFullName();
+	public void setFullName(String fname, String lname);
 	public String getFullName();
 	public void setDept(String dept);
 	public String getDept();
