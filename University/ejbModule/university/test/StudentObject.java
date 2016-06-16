@@ -6,6 +6,9 @@ package university.test;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+import org.junit.runner.JUnitCore;
+import org.junit.runner.Result;
+import org.junit.runner.notification.Failure;
 
 import univesity.calculation.Student;
 
@@ -86,6 +89,14 @@ public class StudentObject {
 		assertEquals(year, st.getYear());
 	}
 
+	public static void main(String[] args){
+		Result result = JUnitCore.runClasses(StudentObject.class);
+		
+		for(Failure fail : result.getFailures()){
+			System.out.println(fail.toString());
+		}
+		System.out.println(result.wasSuccessful());
+	}
 
 
 }
