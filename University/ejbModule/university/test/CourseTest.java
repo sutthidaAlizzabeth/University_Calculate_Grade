@@ -22,7 +22,7 @@ public class CourseTest {
 	String subjectId = "INT102";
 	String subjectName = "Java Programming";
 	int credit = 3;
-	String grade = "A";
+	String grade = "B+";
 
 	/**
 	 * Test method for {@link univesity.calculation.Course#setSubjectId(java.lang.String)}.
@@ -61,7 +61,7 @@ public class CourseTest {
 	@Test
 	public void testGrade() {
 		course.setGrade(grade);
-		assertEquals(4.0 , course.getGrade(),0);
+		assertEquals(3.5 , course.getGrade(), 0);
 	}
 	
 	public static void main(String[] args){

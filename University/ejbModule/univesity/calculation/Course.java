@@ -53,20 +53,24 @@ public class Course implements Subject{
 			break;
 		case "B+" :
 			grade = 3.5;
+			break;
 		case "B" :
 			grade = 3;
+			break;
 		case "C+" :
 			grade = 2.5;
+			break;
 		case "C" :
 			grade = 2;
+			break;
 		case "D+" :
 			grade = 1.5;
+			break;
 		case "D" :
 			grade = 1;
-		case "F" :
-			grade = 0;
-		default:
 			break;
+		default:
+			grade = 0;
 		}
 	}
 	

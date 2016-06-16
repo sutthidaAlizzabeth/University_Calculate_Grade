@@ -41,7 +41,7 @@ public class Grade {
 		return this.gpa;
 	}
 	
-	public void setGPA(double score, int credit){
+	public void calculateGPA(double score, int credit){
 		this.gpa = score/credit;
 	}
 
@@ -52,7 +52,7 @@ public class Grade {
 			g.setTotalCredit(c.getCredit());
 			g.setTotalScore(c.getGrade()*c.getCredit());
 		}
-		g.setGPA(g.getTotalScore(), g.getTotalCredit());
+		g.calculateGPA(g.getTotalScore(), g.getTotalCredit());
 		return g.getGPA();
 	}
 }
