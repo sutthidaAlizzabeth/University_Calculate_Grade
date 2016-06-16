@@ -2,6 +2,9 @@
     <wb-module deploy-name="CalculateGradeWeb">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="CalculateGradeClient.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/CalculateGradeClient/CalculateGradeClient">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="CalculateGradeWeb"/>
         <property name="java-output-path" value="/CalculateGradeWeb/build/classes"/>
     </wb-module>
