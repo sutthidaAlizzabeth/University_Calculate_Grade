@@ -35,6 +35,15 @@
 	<script src="js/bootstrap.min.js"></script>
 	<!-- ./jQuery (necessary for Bootstrap's JavaScript plugins) -->
 
-	<div class="container"></div>
+	<div class="container">
+		<div id="main-topic">
+			<center>
+				<h1>Calculate Grade</h1>
+			</center>
+		</div>
+		<div>
+			<h3>Profile</h3>
+		</div>
+	</div>
 </body>
 </html>

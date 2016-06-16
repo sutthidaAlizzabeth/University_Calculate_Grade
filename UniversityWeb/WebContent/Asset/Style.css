@@ -1,1 +1,13 @@
 @CHARSET "UTF-8";
+
+.container{
+	background-color: #F7D1C9;
+}
+
+#main-topic{
+	color: #FFF;
+	background-color: #900C3F;
+	margin: auto,0;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
