@@ -43,31 +43,35 @@
 		</div>
 		<!-- profile of student form-->
 		<h3>Profile</h3>
-			<form class="form-horizontal" action="" method="post">
+			<form class="form-horizontal" action="/CalculateGrade" method="post">
   				<div class="form-group">
   					<label for="id" class="col-sm-2 control-label">ID</label>
-    				<div class="col-sm-10">
-      					<input type="text" class="form-control" id="id" placeholder="00000000000">
+    				<div class="col-sm-6">
+      					<input type="text" class="form-control" id="id" name="studentId" placeholder="00000000000">
+    				</div>
+    				<label for="year" class="col-sm-1 control-label">Year</label>
+    				<div class="col-sm-3">
+      					<input type="text" class="form-control" id="year" name="year" placeholder="0">
     				</div>
     			</div>
     			<div class="form-group">
     				<label for="fname" class="col-sm-2 control-label">First Name</label>
     				<div class="col-sm-4">
-      					<input type="text" class="form-control" id="fname" placeholder="First Name">
+      					<input type="text" class="form-control" name="fname" id="fname" placeholder="First Name">
     				</div>
     				<label for="lname" class="col-sm-2 control-label">Last Name</label>
     				<div class="col-sm-4">
-      					<input type="text" class="form-control" id="lname" placeholder="Last Name">
+      					<input type="text" class="form-control" name="lname" id="lname" placeholder="Last Name">
     				</div>
     			</div>
     			<div class="form-group">
     				<label for="department" class="col-sm-2 control-label">Department</label>
     				<div class="col-sm-4">
-      					<input type="text" class="form-control" id="department" placeholder="Department">
+      					<input type="text" class="form-control" name="department" id="department" placeholder="Department">
     				</div>
     				<label for="university" class="col-sm-2 control-label">University</label>
     				<div class="col-sm-4">
-      					<input type="text" class="form-control" id="university" value="KMUTT" placeholder="University">
+      					<input type="text" class="form-control" id="university" value="KMUTT" placeholder="University" readonly="readonly">
     				</div>
   				</div>
   				<br/>
