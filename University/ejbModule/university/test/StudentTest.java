@@ -16,7 +16,7 @@ import univesity.calculation.Student;
  * @author Alizzabeth
  *
  */
-public class StudentObject {
+public class StudentTest {
 
 	Student st = new Student();
 	String id = "56130500076";
@@ -90,7 +90,7 @@ public class StudentObject {
 	}
 
 	public static void main(String[] args){
-		Result result = JUnitCore.runClasses(StudentObject.class);
+		Result result = JUnitCore.runClasses(StudentTest.class);
 		
 		for(Failure fail : result.getFailures()){
 			System.out.println(fail.toString());
