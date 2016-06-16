@@ -41,9 +41,100 @@
 				<h1>Calculate Grade</h1>
 			</center>
 		</div>
-		<div>
-			<h3>Profile</h3>
-		</div>
+		<!-- profile of student form-->
+		<h3>Profile</h3>
+			<form class="form-horizontal" action="" method="post">
+  				<div class="form-group">
+  					<label for="id" class="col-sm-2 control-label">ID</label>
+    				<div class="col-sm-10">
+      					<input type="text" class="form-control" id="id" placeholder="00000000000">
+    				</div>
+    			</div>
+    			<div class="form-group">
+    				<label for="fname" class="col-sm-2 control-label">First Name</label>
+    				<div class="col-sm-4">
+      					<input type="text" class="form-control" id="fname" placeholder="First Name">
+    				</div>
+    				<label for="lname" class="col-sm-2 control-label">Last Name</label>
+    				<div class="col-sm-4">
+      					<input type="text" class="form-control" id="lname" placeholder="Last Name">
+    				</div>
+    			</div>
+    			<div class="form-group">
+    				<label for="department" class="col-sm-2 control-label">Department</label>
+    				<div class="col-sm-4">
+      					<input type="text" class="form-control" id="department" placeholder="Department">
+    				</div>
+    				<label for="university" class="col-sm-2 control-label">University</label>
+    				<div class="col-sm-4">
+      					<input type="text" class="form-control" id="university" value="KMUTT" placeholder="University">
+    				</div>
+  				</div>
+  				<br/>
+  		<!-- ./profile of student form-->
+  		<!-- grade form-->
+  				<h3>Grade</h3>
+  				<div class="form-group">
+    				<label for="sub1" class="col-sm-2 control-label">No.1</label>
+    				<div class="col-sm-2">
+      					<input type="text" class="form-control" id="sub1" placeholder="Subject ID">
+    				</div>
+    				<div class="col-sm-4">
+      					<input type="text" class="form-control" placeholder="Subject Name">
+    				</div>
+    				<div class="col-sm-2">
+      					<input type="text" class="form-control" placeholder="Credit">
+    				</div>
+    				<div class="col-sm-2">
+      					<input type="text" class="form-control" placeholder="Grade">
+    				</div>
+    			</div>
+    			<div class="form-group">
+    				<label for="sub2" class="col-sm-2 control-label">No.2</label>
+    				<div class="col-sm-2">
+      					<input type="text" class="form-control" id="sub2" placeholder="Subject ID">
+    				</div>
+    				<div class="col-sm-4">
+      					<input type="text" class="form-control" placeholder="Subject Name">
+    				</div>
+    				<div class="col-sm-2">
+      					<input type="text" class="form-control" placeholder="Credit">
+    				</div>
+    				<div class="col-sm-2">
+      					<input type="text" class="form-control" placeholder="Grade">
+    				</div>
+    			</div>
+    			<div class="form-group">
+    				<label for="sub3" class="col-sm-2 control-label">No.3</label>
+    				<div class="col-sm-2">
+      					<input type="text" class="form-control" id="sub3" placeholder="Subject ID">
+    				</div>
+    				<div class="col-sm-4">
+      					<input type="text" class="form-control" placeholder="Subject Name">
+    				</div>
+    				<div class="col-sm-2">
+      					<input type="text" class="form-control" placeholder="Credit">
+    				</div>
+    				<div class="col-sm-2">
+      					<input type="text" class="form-control" placeholder="Grade">
+    				</div>
+    			</div>
+    	<!-- ./grade form-->
+  				<div class="form-group">
+    				<div class="col-sm-offset-2 col-sm-10">
+      					<div class="checkbox">
+        					<label>
+          						<input type="checkbox"> Remember me
+        					</label>
+      					</div>
+    				</div>
+  				</div>
+  				<div class="form-group">
+    				<div class="col-sm-offset-2 col-sm-10">
+      					<button type="submit" class="btn btn-default">Send</button>
+    				</div>
+  				</div>
+			</form>
 	</div>
 </body>
 </html>
