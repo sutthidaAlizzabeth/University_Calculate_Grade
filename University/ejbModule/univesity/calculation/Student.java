@@ -3,12 +3,17 @@
  */
 package univesity.calculation;
 
+import javax.ejb.EJB;
+import javax.ejb.Stateful;
+import javax.ejb.Stateless;
+
 import university.person.Person;
 
 /**
  * @author Alizzabeth
  *
  */
+@Stateless
 public class Student implements Person{
 	
 	private String id;

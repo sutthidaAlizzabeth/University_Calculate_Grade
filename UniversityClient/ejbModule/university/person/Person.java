@@ -3,11 +3,15 @@
  */
 package university.person;
 
+import javax.ejb.Local;
+import javax.ejb.Remote;
+
 /**
  * @author Alizzabeth
  *
  */
-public interface Person {
+@Local
+public interface Person{
 	final static String university = "KMUTT";
 	
 	public void setId(String id);

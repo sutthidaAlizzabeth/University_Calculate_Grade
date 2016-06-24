@@ -47,27 +47,27 @@
   				<div class="form-group">
   					<label for="id" class="col-sm-2 control-label">ID</label>
     				<div class="col-sm-6">
-      					<input type="text" class="form-control" id="id" name="studentId" value="${studentId}" readonly="readonly">
+      					<input type="text" class="form-control" id="id" value="${studentId}" readonly="readonly">
     				</div>
     				<label for="year" class="col-sm-1 control-label">Year</label>
     				<div class="col-sm-3">
-      					<input type="text" class="form-control" id="year" name="year" value="${year}" readonly="readonly">
+      					<input type="text" class="form-control" id="year" value="${year}" readonly="readonly">
     				</div>
     			</div>
     			<div class="form-group">
     				<label for="fname" class="col-sm-2 control-label">First Name</label>
     				<div class="col-sm-4">
-      					<input type="text" class="form-control" name="fname" id="fname" value="${fname}" readonly="readonly">
+      					<input type="text" class="form-control" id="fname" value="${fname}" readonly="readonly">
     				</div>
     				<label for="lname" class="col-sm-2 control-label">Last Name</label>
     				<div class="col-sm-4">
-      					<input type="text" class="form-control" name="lname" id="lname" value="${lname}" readonly="readonly">
+      					<input type="text" class="form-control" id="lname" value="${lname}" readonly="readonly">
     				</div>
     			</div>
     			<div class="form-group">
     				<label for="department" class="col-sm-2 control-label">Department</label>
     				<div class="col-sm-4">
-      					<input type="text" class="form-control" name="department" id="department" value="${department}" readonly="readonly">
+      					<input type="text" class="form-control"  id="department" value="${department}" readonly="readonly">
     				</div>
     				<label for="university" class="col-sm-2 control-label">University</label>
     				<div class="col-sm-4">
@@ -76,6 +76,62 @@
   				</div>
   				<br/>
   		<!-- ./profile of student form-->
+  		<!-- grade form-->
+  				<h3>Grade</h3>
+  				<div class="form-group">
+    				<label for="sub1" class="col-sm-2 control-label">No.1</label>
+    				<div class="col-sm-2">
+      					<input type="text" class="form-control" id="sub1" value="${subId1}" readonly="readonly">
+    				</div>
+    				<div class="col-sm-4">
+      					<input type="text" class="form-control" value="${sub1}" readonly="readonly">
+    				</div>
+    				<div class="col-sm-2">
+      					<input type="text" class="form-control" value="${credit1}" readonly="readonly">
+    				</div>
+    				<div class="col-sm-2">
+      					<input type="text" class="form-control" value="${grade1}" readonly="readonly">
+    				</div>
+    			</div>
+    			<div class="form-group">
+    				<label for="sub2" class="col-sm-2 control-label">No.2</label>
+    				<div class="col-sm-2">
+      					<input type="text" class="form-control" id="sub2" value="${subId2}" readonly="readonly">
+    				</div>
+    				<div class="col-sm-4">
+      					<input type="text" class="form-control" value="${sub2}" readonly="readonly">
+    				</div>
+    				<div class="col-sm-2">
+      					<input type="text" class="form-control" value="${credit2}" readonly="readonly">
+    				</div>
+    				<div class="col-sm-2">
+      					<input type="text" class="form-control" value="${grade2}" readonly="readonly">
+    				</div>
+    			</div>
+    			<div class="form-group">
+    				<label for="sub3" class="col-sm-2 control-label">No.3</label>
+    				<div class="col-sm-2">
+      					<input type="text" class="form-control" id="sub3" value="${subId3}" readonly="readonly">
+    				</div>
+    				<div class="col-sm-4">
+      					<input type="text" class="form-control" value="${sub3}" readonly="readonly">
+    				</div>
+    				<div class="col-sm-2">
+      					<input type="text" class="form-control" value="${credit3}" readonly="readonly">
+    				</div>
+    				<div class="col-sm-2">
+      					<input type="text" class="form-control" value="${grade3}" readonly="readonly">
+    				</div>
+    			</div>
+    	<!-- ./grade form-->
+    	<!-- GPA result -->
+    	<div>
+			<center>
+				<h1>GPA:: ${gpa}</h1>
+			</center>
+			<!-- profile of student form-->
+		</div>
+    	<!-- ./GPA rusult -->
 	</div>
 </body>
 </html>

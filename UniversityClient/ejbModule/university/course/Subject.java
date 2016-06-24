@@ -15,15 +15,15 @@ public interface Subject {
 	public String getSubjectId();
 	public void setSubjectName(String name);
 	public String getSubjectName();
-	public void setCredit(int credit);
-	public int getCredit();
+	public void setCredit(double credit);
+	public double getCredit();
 	public void setGrade(String gradeStr);
 	public double getGrade();
-	public int getTotalCredit();
-	public void setTotalCredit(int credit);
+	public double getTotalCredit();
+	public void setTotalCredit(double credit);
 	public double getTotalScore();
 	public void setTotalScore(double score);
 	public double getGPA();
-	public void calculateGPA(double score, int credit);
+	public void calculateGPA(double score, double credit);
 	public double getGPA(List<Subject> subject);
 }

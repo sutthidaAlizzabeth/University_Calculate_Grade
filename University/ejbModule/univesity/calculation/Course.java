@@ -5,19 +5,22 @@ package univesity.calculation;
 
 import java.util.List;
 
+import javax.ejb.Stateful;
+
 import university.course.Subject;
 
 /**
  * @author Alizzabeth
  *
  */
+@Stateful
 public class Course implements Subject{
 	
 	private String subjectId;
 	private String subjectName;
-	private int credit;
+	private double credit;
 	private double grade;
-	private int totalCredit;
+	private double totalCredit;
 	private double totalScore;
 	private double gpa;
 
@@ -42,12 +45,12 @@ public class Course implements Subject{
 	}
 
 	@Override
-	public void setCredit(int credit) {
+	public void setCredit(double credit) {
 		this.credit = credit;
 	}
 
 	@Override
-	public int getCredit() {
+	public double getCredit() {
 		return this.credit;
 	}
 	
@@ -78,6 +81,8 @@ public class Course implements Subject{
 		default:
 			grade = 0;
 		}
+		
+		System.out.println("Grade = " + getGrade());
 	}
 	
 	@Override
@@ -86,12 +91,12 @@ public class Course implements Subject{
 	}
 
 	@Override
-	public int getTotalCredit() {
+	public double getTotalCredit() {
 		return totalCredit;
 	}
 
 	@Override
-	public void setTotalCredit(int credit) {
+	public void setTotalCredit(double credit) {
 		this.totalCredit += credit;
 	}
 
@@ -112,19 +117,21 @@ public class Course implements Subject{
 	}
 	
 	@Override
-	public void calculateGPA(double score, int credit){
+	public void calculateGPA(double score, double credit){
 		this.gpa = score/credit;
 	}
 
 
 	@Override
 	public double getGPA(List<Subject> subject){
-		Grade g = new Grade();
+		System.out.println("--------------getGPA method-----------------");
+		Course c = new Course();
 		for (Subject s : subject) {
-			g.setTotalCredit(s.getCredit());
-			g.setTotalScore(s.getGrade()*s.getCredit());
+			System.out.println("--------------subject foreach-----------------");
+			c.setTotalCredit(s.getCredit());
+			c.setTotalScore(s.getGrade()*s.getCredit());
 		}
-		g.calculateGPA(g.getTotalScore(), g.getTotalCredit());
-		return g.getGPA();
+		c.calculateGPA(c.getTotalScore(), c.getTotalCredit());
+		return c.getGPA();
 	}
 }
