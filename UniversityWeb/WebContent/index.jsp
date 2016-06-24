@@ -43,7 +43,7 @@
 		</div>
 		<!-- profile of student form-->
 		<h3>Profile</h3>
-			<form class="form-horizontal" action="/CalculateGrade" method="post">
+			<form class="form-horizontal" action="CalculateGrade" method="post">
   				<div class="form-group">
   					<label for="id" class="col-sm-2 control-label">ID</label>
     				<div class="col-sm-6">

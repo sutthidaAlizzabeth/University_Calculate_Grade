@@ -39,25 +39,31 @@ public class CalculateGrade extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.getWriter().append("---in doPost method---").append(request.getContextPath());
 		//get student profile from form
+		System.out.println("-get values from jsp form");
 		String studentId = request.getParameter("studentId");
 		String year = request.getParameter("year");
 		String fname = request.getParameter("fname");
 		String lname = request.getParameter("lname");
 		String department = request.getParameter("department");
+		response.getWriter().append("-./get values from jsp form").append(request.getContextPath());
 		
 		try {
+			response.getWriter().append("-set values to Student object").append(request.getContextPath());
 			Person student = (Person) ReferenceClass.refClass(Person.class.getName());
-			student.setFname(fname);
+			student.setId(studentId);
+			student.setFullName(fname, lname);
+			student.setYear(year);
+			student.setDept(department);
+			response.getWriter().append("-./set values to Student object").append(request.getContextPath());
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.out.println(e.getMessage());
 		}
 		//get subject profile from form
-		
-		for(int i = 1 ; i <= 3 ; i++){
-			
-		}
+		response.getWriter().append("-dispatchatcher").append(request.getContextPath());
+		getServletContext().getRequestDispatcher("/result.jsp").forward(request, response);
 		
 	}
 	
