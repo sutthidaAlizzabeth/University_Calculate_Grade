@@ -40,7 +40,42 @@
 			<center>
 				<h1>Calculate Grade</h1>
 			</center>
+			<!-- profile of student form-->
 		</div>
+		<h3>Profile</h3>
+			<form class="form-horizontal" action="CalculateGrade" method="post">
+  				<div class="form-group">
+  					<label for="id" class="col-sm-2 control-label">ID</label>
+    				<div class="col-sm-6">
+      					<input type="text" class="form-control" id="id" name="studentId" value="${studentId}" readonly="readonly">
+    				</div>
+    				<label for="year" class="col-sm-1 control-label">Year</label>
+    				<div class="col-sm-3">
+      					<input type="text" class="form-control" id="year" name="year" value="${year}" readonly="readonly">
+    				</div>
+    			</div>
+    			<div class="form-group">
+    				<label for="fname" class="col-sm-2 control-label">First Name</label>
+    				<div class="col-sm-4">
+      					<input type="text" class="form-control" name="fname" id="fname" value="${fname}" readonly="readonly">
+    				</div>
+    				<label for="lname" class="col-sm-2 control-label">Last Name</label>
+    				<div class="col-sm-4">
+      					<input type="text" class="form-control" name="lname" id="lname" value="${lname}" readonly="readonly">
+    				</div>
+    			</div>
+    			<div class="form-group">
+    				<label for="department" class="col-sm-2 control-label">Department</label>
+    				<div class="col-sm-4">
+      					<input type="text" class="form-control" name="department" id="department" value="${department}" readonly="readonly">
+    				</div>
+    				<label for="university" class="col-sm-2 control-label">University</label>
+    				<div class="col-sm-4">
+      					<input type="text" class="form-control" id="university" value="KMUTT" placeholder="University" readonly="readonly">
+    				</div>
+  				</div>
+  				<br/>
+  		<!-- ./profile of student form-->
 	</div>
 </body>
 </html>

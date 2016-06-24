@@ -81,46 +81,46 @@
   				<div class="form-group">
     				<label for="sub1" class="col-sm-2 control-label">No.1</label>
     				<div class="col-sm-2">
-      					<input type="text" class="form-control" id="sub1" placeholder="Subject ID">
+      					<input type="text" class="form-control" id="sub1" name="subid1" placeholder="Subject ID">
     				</div>
     				<div class="col-sm-4">
-      					<input type="text" class="form-control" placeholder="Subject Name">
+      					<input type="text" class="form-control" name="sub1" placeholder="Subject Name">
     				</div>
     				<div class="col-sm-2">
-      					<input type="text" class="form-control" placeholder="Credit">
+      					<input type="text" class="form-control" name="credit1" placeholder="Credit">
     				</div>
     				<div class="col-sm-2">
-      					<input type="text" class="form-control" placeholder="Grade">
+      					<input type="text" class="form-control" name="grade1" placeholder="Grade">
     				</div>
     			</div>
     			<div class="form-group">
     				<label for="sub2" class="col-sm-2 control-label">No.2</label>
     				<div class="col-sm-2">
-      					<input type="text" class="form-control" id="sub2" placeholder="Subject ID">
+      					<input type="text" class="form-control" id="sub2" name="subid2" placeholder="Subject ID">
     				</div>
     				<div class="col-sm-4">
-      					<input type="text" class="form-control" placeholder="Subject Name">
+      					<input type="text" class="form-control" name="sub2" placeholder="Subject Name">
     				</div>
     				<div class="col-sm-2">
-      					<input type="text" class="form-control" placeholder="Credit">
+      					<input type="text" class="form-control" name="credit2" placeholder="Credit">
     				</div>
     				<div class="col-sm-2">
-      					<input type="text" class="form-control" placeholder="Grade">
+      					<input type="text" class="form-control" name="grade2" placeholder="Grade">
     				</div>
     			</div>
     			<div class="form-group">
     				<label for="sub3" class="col-sm-2 control-label">No.3</label>
     				<div class="col-sm-2">
-      					<input type="text" class="form-control" id="sub3" placeholder="Subject ID">
+      					<input type="text" class="form-control" id="sub3" name="subid3" placeholder="Subject ID">
     				</div>
     				<div class="col-sm-4">
-      					<input type="text" class="form-control" placeholder="Subject Name">
+      					<input type="text" class="form-control" name="sub3" placeholder="Subject Name">
     				</div>
     				<div class="col-sm-2">
-      					<input type="text" class="form-control" placeholder="Credit">
+      					<input type="text" class="form-control" name="credit3" placeholder="Credit">
     				</div>
     				<div class="col-sm-2">
-      					<input type="text" class="form-control" placeholder="Grade">
+      					<input type="text" class="form-control" name="grade3" placeholder="Grade">
     				</div>
     			</div>
     	<!-- ./grade form-->
